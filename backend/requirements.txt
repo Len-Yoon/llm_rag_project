@@ -1,0 +1,30 @@
+# --- Web / Framework ---
+fastapi==0.115.2
+uvicorn[standard]==0.32.0
+python-dotenv==1.0.1
+pydantic==2.9.2
+
+# --- LangChain stack (호환 세트) ---
+langchain==0.3.27
+langchain-core>=0.3.75,<0.4
+langchain-community==0.3.30
+langchain-openai==0.2.7
+langchain-chroma==0.1.4
+langchain-text-splitters==0.3.10    # ⬅️ 여기만 상향
+langchain-huggingface==0.3.1
+
+# --- Vector store / Embeddings ---
+chromadb==0.5.12
+sentence-transformers==3.1.1
+transformers==4.45.2
+
+# --- Crawling ---
+selenium==4.24.0
+webdriver-manager==4.0.2
+
+# --- Torch (2.4 세대; CUDA 12.4 휠이면 +cu124) ---
+torch==2.4.1
+
+requests>=2.32.5
+trafilatura==1.9.0
+lxml==5.1.0

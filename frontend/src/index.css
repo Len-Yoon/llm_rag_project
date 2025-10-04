@@ -1,0 +1,15 @@
+/* frontend/src/index.css */
+@import "tailwindcss";
+
+/* (선택) v4 스타일의 테마 확장 */
+@theme {
+  --color-primary: #2563eb;
+  --color-accent:  #10b981;
+}
+
+/* 기본 레이아웃 유틸 */
+html, body, #root { height: 100%; margin: 0; }
+body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont; }
+
+/* 재사용 카드 */
+.card { @apply bg-white rounded-2xl shadow-md border border-gray-100 p-4; }
