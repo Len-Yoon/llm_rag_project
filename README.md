@@ -223,7 +223,7 @@ npm run dev
 <details>
   <summary>3. 타임아웃/응답 지연 (`timeout of 30000ms exceeded`)</summary>
 
-  - **증상**: 프론트에서 30초 타임아웃.
+  - **증상**: 프론트에서 60초 타임아웃.
 - **원인**: 초기 크롤+본문 추출+임베딩이 느림(특히 Selenium 폴백).
 - **해결**
   - 프론트 `.env.local`: `VITE_REQUEST_TIMEOUT=60000` (필요 시 ↑)
